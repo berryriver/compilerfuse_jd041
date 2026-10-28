@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "berryriver-compilerfuse_jd041"
+version = "0.1.0"
+description = "为每一项打分并与阈值比较，明确标出通过、边界与不通过三档"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "berryriver" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://berryriver.github.io"
+Repository = "https://github.com/berryriver/compilerfuse_jd041"
+Issues = "https://github.com/berryriver/compilerfuse_jd041/issues"
+
+[project.scripts]
+compilerfuse_jd041 = "compilerfuse_jd041:main"
+
+[tool.setuptools]
+py-modules = ["compilerfuse_jd041"]
